@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+    <system>
+        <section id="carriers">
+            <group id="flatrate" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Flat Rate</label>
+                <field id="delivery_days" translate="label" type="multiselect" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Days</label>
+                    <source_model>Ahmed\Ukpos\Model\Config\Source\DeliveryDays</source_model>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="delivery_exception_dates" translate="label" type="textarea" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Exception Dates</label>
+                    <comment>Enter exception dates in the format: dd/mm/yyyy, one per line.</comment>
+                </field>
+                <field id="delivery_time" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Time (days)</label>
+                    <validate>required-entry validate-digits</validate>
+                    <comment>Enter the number of days after dispatch for delivery.</comment>
+                </field>
+                <field id="cut_off_time" translate="cut off time" type="time" sortOrder="130" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Cut off Time</label>
+                   <validate>required-entry</validate>
+                </field>
+            </group>
+            <group id="freeshipping" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Free Shipping</label>
+                <field id="delivery_days" translate="label" type="multiselect" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Days</label>
+                    <source_model>Ahmed\Ukpos\Model\Config\Source\DeliveryDays</source_model>
+                </field>
+                <field id="delivery_exception_dates" translate="label" type="textarea" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Exception Dates</label>
+                    <comment>Enter exception dates in the format: dd/mm/yyyy, one per line.</comment>
+                </field>
+                <field id="delivery_time" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Delivery Time (days)</label>
+                    <validate>validate-digits</validate>
+                    <comment>Enter the number of days after dispatch for delivery.</comment>
+                </field>
+                 <field id="cut_off_time" translate="cut off time" type="time" sortOrder="130" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Cut off Time</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

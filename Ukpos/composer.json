@@ -1,0 +1,14 @@
+{
+    "name": "ahmed/module-ukpos",
+    "description": "Magento 2 Ukpos Module",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ahmed\\Ukpos\\": "app/code/Ahmed/Ukpos/"
+        }
+    }
+}

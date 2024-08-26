@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+    <default>
+        <carriers>
+            <flatrate>
+                <delivery_days>1</delivery_days>
+                <delivery_exception_dates>25-12-2024</delivery_exception_dates>
+                <delivery_time>1</delivery_time>
+            </flatrate>
+            <freeshipping>
+                <delivery_days>1</delivery_days>
+                <delivery_exception_dates>25-12-2024</delivery_exception_dates>
+                <delivery_time>1</delivery_time>
+            </freeshipping>
+        </carriers>
+    </default>
+</config>
